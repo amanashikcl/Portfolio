@@ -3,7 +3,9 @@ import Footer from "./components/Footer";
 import ClickSpark from "./components/ClickSpark";
 import Home from "./pages/Home";
 import Skills from "./components/Skills";
-import About from "./pages/About";
+import Projects from "./pages/Projects";
+
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -24,7 +26,10 @@ function App() {
             <Skills />
           </section>
           <section id="projects" className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
-            <About />
+            <Projects />
+          </section>
+          <section id="contact" className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+            <Contact />
           </section>
         </main>
         <Footer />

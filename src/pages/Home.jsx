@@ -4,6 +4,10 @@ import GradientText from '../components/GradientText';
 import ShinyText from '../components/ShinyText';
 
 const Home = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-12 p-8 max-w-5xl mx-auto">
       <div className="w-full lg:w-1/2 flex-shrink-0 flex justify-center">
@@ -45,8 +49,18 @@ const Home = () => {
           />
         </div>
         <div className="flex gap-4 pt-4">
-          <button className="btn btn-primary">View Projects</button>
-          <button className="btn btn-outline">Contact Me</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => scrollToSection('projects')}
+          >
+            View Projects
+          </button>
+          <button
+            className="btn btn-outline"
+            onClick={() => scrollToSection('contact')}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>

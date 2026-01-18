@@ -19,7 +19,7 @@ const projects = [
     },
 ];
 
-const About = () => {
+const Projects = () => {
     return (
         <div className="max-w-5xl mx-auto px-8 py-8 space-y-6">
             {/* Header */}
@@ -97,4 +97,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Projects;
