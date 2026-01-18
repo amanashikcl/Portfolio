@@ -86,11 +86,11 @@ const About = () => {
             <div className="text-center pt-8 space-y-4">
                 <p className="text-xl">Want to know more about my experience?</p>
                 <a
-                    href="/resume.pdf"
+                    href="/amanashik_resume.pdf"
                     download
                     className="btn btn-primary btn-lg gap-2"
                 >
-                    📄 Download Resume
+                    Download Resume
                 </a>
             </div>
         </div>
