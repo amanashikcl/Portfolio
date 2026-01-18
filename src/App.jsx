@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ClickSpark from "./components/ClickSpark";
 import Home from "./pages/Home";
+import Skills from "./components/Skills";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -14,9 +16,17 @@ function App() {
     >
       <div className="min-h-screen flex flex-col">
         <Header />
-        <div className="flex-grow">
-          <Home />
-        </div>
+        <main className="flex-grow">
+          <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+            <Home />
+          </section>
+          <section id="skills" className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+            <Skills />
+          </section>
+          <section id="projects" className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+            <About />
+          </section>
+        </main>
         <Footer />
       </div>
     </ClickSpark>

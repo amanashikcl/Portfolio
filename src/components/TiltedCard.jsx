@@ -97,13 +97,21 @@ export default function TiltedCard({
           rotateY,
           scale
         }}>
+        {/* Glassmorphism container with blurred background and gradient border */}
+        <div
+          className={`absolute inset-[-8px] ${rounded} bg-gradient-to-br from-white/20 via-white/5 to-transparent backdrop-blur-sm`}
+          style={{
+            boxShadow: '0 8px 32px rgba(99, 102, 241, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1)'
+          }}
+        />
         <motion.img
           src={imageSrc}
           alt={altText}
-          className={`absolute top-0 left-0 object-cover ${rounded} will-change-transform [transform:translateZ(0)]`}
+          className={`absolute top-0 left-0 object-cover ${rounded} will-change-transform [transform:translateZ(0)] border border-white/20`}
           style={{
             width: imageWidth,
-            height: imageHeight
+            height: imageHeight,
+            boxShadow: '0 4px 24px rgba(0, 0, 0, 0.3)'
           }} />
 
         {displayOverlayContent && overlayContent && (
