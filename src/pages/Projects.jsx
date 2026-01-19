@@ -17,6 +17,12 @@ const projects = [
         keyTech: ['Django', 'PostgreSQL', 'Celery', 'Redis', 'Docker'],
         github: 'https://github.com/amanashikcl/SubTracker',
     },
+    {
+        name: 'CityWatcher',
+        description: 'CityWatcher is a centralized civic-issue management platform developed using Django, designed to streamline the reporting and resolution of urban infrastructure problems like potholes. The system utilizes a role-based architecture with three distinct modules.',
+        keyTech: ['Django', 'Python'],
+        github: 'https://github.com/amanashikcl/CityWatcher',
+    },
 ];
 
 const Projects = () => {
